@@ -25,7 +25,7 @@ Welcome to ziddi_shop Bot Maker, where crafting beats becomes a breeze! 🚀🎵
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Nepcoder1/NepTunes-Bot-Maker.git
+   git clone https://github.com/z1dd1/ziddi_musicbot.git
    ```
 
 2. **Configure SSL:**
