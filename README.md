@@ -1,6 +1,6 @@
-# NepTunes Bot Maker - Craft Beats with Ease! 🤖🎶
+# ziddi_shop Bot Maker - Craft Beats with Ease! 🤖🎶
 
-Welcome to NepTunes Bot Maker, where crafting beats becomes a breeze! 🚀🎵
+Welcome to ziddi_shop Bot Maker, where crafting beats becomes a breeze! 🚀🎵
 
 ## Features:
 
@@ -19,7 +19,7 @@ Welcome to NepTunes Bot Maker, where crafting beats becomes a breeze! 🚀🎵
 5. **Groove & Share 🎉:**
    Spread the joy of music on Telegram and beyond! #MusicDownloader #TechTunes
 
-*Crafted with ❤️ by NepCoder* 🚀
+*Crafted with ❤️ by ziddi_shop* 🚀
 
 ## How to Use:
 
@@ -34,13 +34,13 @@ Welcome to NepTunes Bot Maker, where crafting beats becomes a breeze! 🚀🎵
 3. **Deploy the Bot:**
    Effortlessly deploy the PHP music downloader to transform your server into a musical paradise.
 
-4. **Integrate NepDevs API:**
+4. **Integrate ziddi_shop API:**
    Seamlessly integrate with NepDevs API to access a vast music library.
 
 5. **Spread the Joy on Telegram:**
    Share your favorite tunes with the world using Telegram!
 
-## Share with Credit by NepCoder 🚀
+## Share with Credit by ziddi_shop 🚀
 
 Feel free to share and modify this music bot maker, but don't forget to credit NepCoder for this musical innovation.
 
