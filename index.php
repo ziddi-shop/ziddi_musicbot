@@ -6,7 +6,7 @@ $telegramAPI = 'https://api.telegram.org/bot' . $botToken . '/';
 
 function isMember($chatID, $user_id) {
     global $telegramAPI;
-    $check = json_decode(file_get_contents($telegramAPI . 'getChatMember?chat_id=@devsnp&user_id=' . $user_id), true);//replace All My Channel Username With Yours
+    $check = json_decode(file_get_contents($telegramAPI . 'getChatMember?chat_id=@method_shop&user_id=' . $user_id), true);//replace All My Channel Username With Yours
     return ($check['ok'] && ($check['result']['status'] === 'member' || $check['result']['status'] === 'administrator' || $check['result']['status'] === 'creator'));
 }
 
@@ -57,11 +57,11 @@ if (strpos($message, '/start') !== false) {
             file_put_contents($usersFile, json_encode($existingUsers));
         }
     } else {
-        $joinMessage = "To access music downloads, join our channel: https://t.me/devsnp ";
+        $joinMessage = "To access music downloads, join our channel: https://t.me/method_shop ";
         $keyboard = [
             'inline_keyboard' => [
                 [
-                    ['text' => 'Join @devsnp', 'url' => 'https://t.me/devsnp']
+                    ['text' => 'Join @method_shop', 'url' => 'https://t.me/method_shop']
                 ]
             ]
         ];
@@ -86,13 +86,13 @@ if (strpos($message, '/start') !== false) {
                 $tempFilePath = 'song.mp3';
                 downloadFile($downloadUrl, $tempFilePath);
 
-                $caption = "Song: $songName\nArtist: $artist\nMusic downloaded by @NepMusicDownloderbot";
+                $caption = "Song: $songName\nArtist: $artist\nMusic downloaded by @ziddi_music_bot";
 
                 $postFields = [
                     'chat_id' => $chatID,
                     'document' => new CURLFile($tempFilePath),
                     'caption' => $caption,
-                    'reply_markup' => json_encode(['inline_keyboard' => [[['text' => 'Join @devsnp', 'url' => 'https://t.me/devsnp']]]])
+                    'reply_markup' => json_encode(['inline_keyboard' => [[['text' => 'Join @method_shop', 'url' => 'https://t.me/method_shop']]]])
                 ];
                 $url = "https://api.telegram.org/bot{$GLOBALS['botToken']}/sendDocument";
 
@@ -114,11 +114,11 @@ if (strpos($message, '/start') !== false) {
             file_get_contents($telegramAPI . 'sendMessage?chat_id=' . $chatID . '&text=' . urlencode($response));
         }
     } else {
-        $joinMessage = "To access music downloads, join our channel: https://t.me/devsnp ";
+        $joinMessage = "To access music downloads, join our channel: https://t.me/method_shop ";
         $keyboard = [
             'inline_keyboard' => [
                 [
-                    ['text' => 'Join @devsnp', 'url' => 'https://t.me/devsnp']
+                    ['text' => 'Join @method_shop', 'url' => 'https://t.me/method_shop']
                 ]
             ]
         ];
